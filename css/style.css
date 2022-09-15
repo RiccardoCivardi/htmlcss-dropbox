@@ -6,3 +6,101 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* UTILS */
+
+.debug {
+  background-color: chartreuse;
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-bet {
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #0B60F6;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+/* HEADER */
+
+header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 1px solid #EEECEF;
+  padding: 0 20px;
+}
+
+.header-left, .header-right {
+  height: 100%;
+  align-items: center;
+}
+
+header .logo {
+  margin-right: 20px;
+}
+
+.menu ul li {
+  line-height: 80px;
+  list-style: none;
+  display: inline-block;
+  padding:0 6px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #747474;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 13px;
+  border-bottom: 2px solid #fff;
+}
+
+.menu ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+
+/* JUMBO */
+
+.jumbotron {
+  height: 735px;
+  padding-top: 90px;
+  background-color: #B4D0E7;
+}
+
+
+/* MAIN */
+
+main {
+  /* DEBUG */
+  width: 100%;
+  height: 1000px;
+  background-color: red;
+}
+
