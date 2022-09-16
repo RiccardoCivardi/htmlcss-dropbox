@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #393939;
@@ -28,6 +32,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h1, h2, h3 {
@@ -36,6 +41,10 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+}
+
+p {
+  line-height: 1.4rem;
 }
 
 
@@ -80,6 +89,16 @@ a.btn {
 
 .btn.big {
   padding: 15px;
+}
+
+.btn.big.dark {
+  background-color: #fff;
+  width: auto;
+  border: 1px solid #393939;
+}
+
+a.btn.big.dark {
+  color: #393939;
 }
 
 .btn:hover {
@@ -162,10 +181,6 @@ header {
   position: relative;
   top: 60px;
   bottom: -60px;
-}
-
-.jumbotron .text p {
-  line-height: 1.4rem;
 }
 
 .arrow {
@@ -284,8 +299,22 @@ section.plan .col.horizontal .card-bottom .left p {
   padding-top: 10px;
 }
 
+section.partner .main-container {
+  padding: 0 25px;
+}
 
+section.partner .image {
+  width: 60%;
+}
 
+section.partner .text {
+  width: 40%;
+  padding: 55px 45px;
+}
+
+section.partner .text p {
+  padding: 15px 0 30px;
+}
 
 
 
