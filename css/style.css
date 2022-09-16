@@ -71,6 +71,7 @@ ul {
   text-decoration: none;
   padding: 8px 15px;
   text-align: center;
+  width: 100%;
 }
 
 a.btn {
@@ -186,8 +187,6 @@ header {
 
 section.plan {
   margin-top: 150px;
-  /* debug */
-  background-color: #fff;
 }
 
 section.plan .plan-top {
@@ -231,7 +230,7 @@ section.plan .row .card-top {
   border-bottom: 1px solid #D0D0D4; 
 }
 
-section.plan .row .card-bottom {
+section.plan .col .card-bottom {
   padding: 30px;
 }
 
@@ -257,10 +256,6 @@ section.plan .card ul li {
   margin-bottom: 25px;
 }
 
-section.plan .button a {
-  width: 100%;
-}
-
 section.plan .card .buy-now span {
   display: inline-block;
   line-height: 90px;
@@ -280,9 +275,16 @@ section.plan .col.horizontal {
   width: 100%;
 }
 
-section.plan .col.horizontal .card-bottom left {
-  width: 70%;
+section.plan .col.horizontal .card-bottom .right {
+  width: 30%;
+  padding-left: 30px;
 }
+
+section.plan .col.horizontal .card-bottom .left p {
+  padding-top: 10px;
+}
+
+
 
 
 
