@@ -16,8 +16,9 @@ img {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 5rem;
   color: #000;
+  padding-top: 90px;
 }
 
 h2 {
@@ -139,22 +140,13 @@ header {
 /* JUMBO */
 
 .jumbotron {
-  height: 735px;
   margin-top: 80px;
   background-color: #B4D0E7;
-  
 }
 
 .jumbotron .container {
-  padding-top: 90px;
-  height: 100%;
-  position: relative;
-}
-
-.jumbotron .content {
-  position: absolute;
-  bottom: -75px;
-  right: 0;
+  display: relative;
+  flex-wrap: wrap;
 }
 
 .jumbotron .text {
@@ -165,6 +157,12 @@ header {
   width: 70%;
 }
 
+.jumbotron .text, .jumbotron .image {
+  position: relative;
+  top: 60px;
+  bottom: -60px;
+}
+
 .jumbotron .text p {
   line-height: 1.4rem;
 }
@@ -172,13 +170,15 @@ header {
 .arrow {
   color: #000;
   font-size: 2.9rem;
+  display: block;
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   left: 0;
 }
 
-.jumbotron .button {
+.jumbotron .btn {
   margin: 30px 0px;
+  display: block;
 }
 
 
