@@ -43,8 +43,9 @@ ul {
   list-style: none;
 }
 
-p {
+p, blockquote  {
   line-height: 1.4rem;
+  font-size: 1.1rem;
 }
 
 
@@ -342,9 +343,6 @@ section.customers .company .left,
 section.customers .company .center,
 section.customers .company .right {
   width: calc(100% / 3);
-  /* debug */
-  background-color: pink;
-  border: 1px solid black;
 }
 
 section.customers .company .left,
@@ -352,64 +350,108 @@ section.customers .company .right {
   flex-wrap: wrap;
 }
 
+section.customers .company .center {
+  background-color: #F5F5F5;
+  padding: 50px;
+}
+
+section.customers .company .center img {
+  width: 50%;
+}
+
+section.customers .company .center .line {
+  width: 105px;
+  border-bottom: 1px solid #b4b4b4;
+  display: block;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
 section.customers .company .square {
   width: 50%;
-  
-  /* debug */
-  background-color: rgb(199, 10, 42);
-  border: 1px solid black;
 }
 
 section.customers .company .inner-square {
   padding-top: 100%;
   height: 0;
   overflow: hidden;
-  position: relative;
-  background-color: #0B60F6;  
+  position: relative; 
 }
 
-section.customers .company .inner-square svg {
+section.customers .company .inner-square img {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
-  color:rgb(199, 10, 42);
+  filter: invert();
 }
-
-
 
 .green {
   background-color: #A3D49B;
+}
+
+.green:hover, .green:active {
+  border: 15px solid #D1E9CD;
 }
 
 .bordeaux {
   background-color: #62142B;
 }
 
+.bordeaux:hover, .bordeaux:active {
+  border: 15px solid #97485f;
+}
+
 .blue {
   background-color: #3694CE;
+}
+
+.blue:hover, .blue:active {
+  border: 15px solid #70b9e7;
 }
 
 .red {
   background-color: #ED3833;
 }
 
+.red:hover, .red:active {
+  border: 15px solid #ec5b56;
+}
+
 .darkred {
   background-color: #D7322D;
+}
+
+.darkred:hover, .darkred:active {
+  border: 15px solid #aa504d;
 }
 
 .lightblue {
   background-color: #B4D0E7;
 }
 
+.lightblue:hover, .lightblue:active {
+  border: 15px solid #c3daed;
+}
+
 .darkblue {
   background-color: #0D2481;
 }
 
-.yellow {
-  background-color: #A3D49B;
+.darkblue:hover, .darkblue:active {
+  border: 15px solid #3b4c91;
 }
+
+.yellow {
+  background-color: #FCD94B;
+}
+
+.yellow:hover, .yellow:active {
+  border: 15px solid #dbc673;
+}
+
+
 
 
 
