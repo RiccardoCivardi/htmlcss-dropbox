@@ -326,8 +326,90 @@ section.features h3 {
   margin-bottom: 30px;
 }
 
+section.customers .main-container {
+  padding: 70px 25px;
+}
+
+section.customers h2 {
+  width: 70%;
+}
+
+section.customers a {
+  color: #065FF6;
+}
+
+section.customers .company .left,
+section.customers .company .center,
+section.customers .company .right {
+  width: calc(100% / 3);
+  /* debug */
+  background-color: pink;
+  border: 1px solid black;
+}
+
+section.customers .company .left,
+section.customers .company .right {
+  flex-wrap: wrap;
+}
+
+section.customers .company .square {
+  width: 50%;
+  
+  /* debug */
+  background-color: rgb(199, 10, 42);
+  border: 1px solid black;
+}
+
+section.customers .company .inner-square {
+  padding-top: 100%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #0B60F6;  
+}
+
+section.customers .company .inner-square svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  color:rgb(199, 10, 42);
+}
 
 
+
+.green {
+  background-color: #A3D49B;
+}
+
+.bordeaux {
+  background-color: #62142B;
+}
+
+.blue {
+  background-color: #3694CE;
+}
+
+.red {
+  background-color: #ED3833;
+}
+
+.darkred {
+  background-color: #D7322D;
+}
+
+.lightblue {
+  background-color: #B4D0E7;
+}
+
+.darkblue {
+  background-color: #0D2481;
+}
+
+.yellow {
+  background-color: #A3D49B;
+}
 
 
 
