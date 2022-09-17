@@ -27,7 +27,6 @@ h1 {
 
 h2 {
   font-size: 2.6rem;
-  margin-bottom: 60px;
 }
 
 h3 {
@@ -35,7 +34,7 @@ h3 {
   line-height: 2rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #000;
 }
 
@@ -198,20 +197,24 @@ header {
 
 /* MAIN */
 
-section.plan {
+.plan {
   margin-top: 150px;
 }
 
-section.plan .plan-top {
+.plan .plan-top {
   padding: 0 25px;
   margin-bottom: 50px;
 }
 
-section.plan .radio-btn {
+.plan .plan-top h2 {
+  margin-bottom: 60px;
+}
+
+.plan .radio-btn {
   justify-content: align-items;
 }
 
-section.plan .circle {
+.plan .circle {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -220,137 +223,138 @@ section.plan .circle {
   margin-right: 5px;
 }
 
-section.plan .circle.blue {
+.plan .circle.blue {
   border: 5px solid #065FF6;
 }
 
-section.plan .radio-btn span:nth-child(2) {
+.plan .radio-btn span:nth-child(2) {
   margin-right: 50px;
 }
 
-section.plan .row {
+.plan .row {
   flex-wrap: wrap;
 }
 
-section.plan .row .col .card {
+.plan .row .col .card {
   border: 1px solid #D0D0D4;
   height: 100%;
 }
 
-section.plan .row .card-top {
+.plan .row .card-top {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #D0D0D4; 
 }
 
-section.plan .col .card-bottom {
+.plan .col .card-bottom {
   padding: 30px;
 }
 
-section.plan .card h3 {
+.plan .card h3 {
   margin: 10px 0 20px 0;
 }
 
-section.plan h4 {
+.plan h4 {
   margin-bottom: 35px;;
 }
 
-section.plan h4.price {
+.plan h4.price {
   margin-bottom: 15px;
 }
 
-section.plan .card-bottom .billing {
+.plan .card-bottom .billing {
   margin-bottom: 50px;
   display: inline-block;
 }
 
-section.plan .card ul li {
+.plan .card ul li {
   line-height: 1.3rem;
   margin-bottom: 25px;
 }
 
-section.plan .card .buy-now span {
+.plan .card .buy-now span {
   display: inline-block;
   line-height: 90px;
   border-bottom: 1px solid #D0D0D4;
   margin-bottom: 40px;
 }
 
-section.plan .card .buy-now a {
+.plan .card .buy-now a {
   color: #065FF6;
 }
 
-section.plan .card ul:last-child i {
+.plan .card ul:last-child i {
   color: #065FF6;
 }
 
-section.plan .col.horizontal {
+.plan .col.horizontal {
   width: 100%;
 }
 
-section.plan .col.horizontal .card-bottom .right {
+.plan .col.horizontal .card-bottom .right {
   width: 30%;
   padding-left: 30px;
 }
 
-section.plan .col.horizontal .card-bottom .left p {
+.plan .col.horizontal .card-bottom .left p {
   padding-top: 10px;
 }
 
-section.partner .main-container {
+.partner .main-container {
   padding: 150px 25px;
 }
 
-section.partner .image {
+.partner .image {
   width: 60%;
 }
 
-section.partner .text {
+.partner .text {
   width: 40%;
   padding: 55px 45px;
 }
 
-section.partner .text p {
+.partner .text p {
   padding: 15px 0 30px;
 }
 
-section.features h2 {
+.features h2 {
   padding: 0 25px;
   margin-bottom: 80px;
 }
 
-section.features .row {
+.features .row {
   flex-wrap: wrap;
 }
 
-section.features h3 {
+.features h3 {
   margin-bottom: 30px;
 }
 
-section.customers .main-container {
+.customers .main-container {
   padding: 70px 25px;
 }
 
-section.customers h2 {
+.customers h2 {
   width: 70%;
+  margin-bottom: 60px;
 }
 
-section.customers a {
+.customers a {
   color: #065FF6;
 }
 
-section.customers .company .left,
-section.customers .company .center,
-section.customers .company .right {
+.customers .company .left,
+.customers .company .center,
+.customers .company .right {
   width: calc(100% / 3);
 }
 
-section.customers .company .left,
-section.customers .company .right {
+.customers .company .left,
+.customers .company .right {
   flex-wrap: wrap;
 }
 
-section.customers .company .center {
+.customers .company .center {
   background-color: #F5F5F5;
   padding: 0 50px;
   aspect-ratio: 1 / 1;
@@ -363,12 +367,12 @@ section.customers .company .center {
   padding-top: 25px;
 }
 
-section.customers .company .center img {
+.customers .company .center img {
   width: 50%;
   padding-top: 25px;
 }
 
-section.customers .company .center .line {
+.customers .company .center .line {
   width: 105px;
   border-bottom: 1px solid #b4b4b4;
   display: block;
@@ -380,14 +384,14 @@ blockquote {
   margin-bottom: 50px;
 }
 
-section.customers .company .square {
+.customers .company .square {
   width: 50%;
   aspect-ratio: 1 / 1;
   align-items: center;
   text-align: center;
 }
 
-section.customers .company .square img {
+.customers .company .square img {
   width: 50%;
   filter: invert();
 }
@@ -469,13 +473,69 @@ section.customers .company .square img {
 .cta h2 {
   color: #62142B;
   width: 50%;
-  margin: 0;
 }
 
 .cta .btn.big.dark {
   width: 28%;
   border: none;
 }
+
+.faq .main-container {
+  padding: 160px 0 145px;
+  color: #000; 
+}
+
+.faq h2 {
+padding-bottom: 60px;
+border-bottom: 1px solid #9A9A9A;
+}
+
+
+.faq .inner {
+  justify-content: space-between;
+  border-bottom: 1px solid #9A9A9A;
+}
+
+.faq-list h4 {
+  font-size: 1.1rem;
+  padding: 40px 0 40px;
+}
+
+.faq-list .chevron {
+  padding: 40px 40px 0; 
+}
+
+.faq-list .chevron.close {
+  display: none;
+}
+
+.faq-list:hover .open {
+  display: none;
+}
+
+.faq-list:hover .close {
+  display: inline-block;
+}
+
+.faq-list ul {
+  display: none;
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #9A9A9A;;
+}
+
+.faq-list li.question:hover ul { 
+  display: block; 
+}
+
+.faq-list li.question:hover .inner {
+  border: none;
+}
+
+
+
+
+
 
 
 
