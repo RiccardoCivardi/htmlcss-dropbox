@@ -50,16 +50,12 @@ p, blockquote  {
 
 /* UTILS */
 
-.debug {
-  background-color: chartreuse;
-  border: 1px solid black;
-}
-
 .d-flex {
   display: flex;
 }
 
 .container {
+  /* width: 90%; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -68,6 +64,12 @@ p, blockquote  {
   width: 80%;
   max-width: 1050px;
   margin: 0 auto;
+}
+
+.col {
+  width: calc(100% / 3);
+  padding: 0 25px;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -98,13 +100,7 @@ a.btn.big.dark {
 }
 
 .btn:hover {
-  opacity: 0.9;
-}
-
-.col {
-  width: calc(100% / 3);
-  padding: 0 25px;
-  margin-bottom: 50px;
+  opacity: 0.8;
 }
 
 
@@ -124,7 +120,6 @@ header {
 }
 
 .menu .logo img {
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -133,7 +128,7 @@ header {
 }
 
 .menu ul li {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .menu ul li.link a {
@@ -141,12 +136,8 @@ header {
   color: #6A6A6A;
   display: inline-block;
   line-height: 80px;
-  padding: 0 10px;
+  padding: 0 15px;
   border-bottom: 1px solid #EEECEF;
-}
-
-.menu a.btn{
-  color: #fff;
 }
 
 .menu li.link a:hover  {
@@ -162,12 +153,12 @@ header {
 }
 
 .jumbotron .container {
-  display: relative;
   flex-wrap: wrap;
 }
 
 .jumbotron .text {
   width: 30%;
+  position: relative;
 }
 
 .jumbotron .image {
@@ -176,14 +167,12 @@ header {
 
 .jumbotron .text, .jumbotron .image {
   position: relative;
-  top: 60px;
   bottom: -60px;
 }
 
 .arrow {
   color: #000;
   font-size: 2.9rem;
-  display: block;
   position: absolute;
   bottom: 80px;
   left: 0;
@@ -191,7 +180,6 @@ header {
 
 .jumbotron .btn {
   margin: 30px 0px;
-  display: block;
 }
 
 
