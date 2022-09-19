@@ -498,17 +498,18 @@ border-bottom: 1px solid #9A9A9A;
   display: none;
 }
 
-.faq-list ul {
+.faq-list p {
   display: none;
   width: 100%;
   padding-bottom: 40px;
+  font-size: 1rem;
 }
 
 .faq-list li.question {
   border-bottom: 1px solid #9A9A9A;
 }
 
-.faq-list li.question:hover ul { 
+.faq-list li.question:hover p { 
   display: block; 
 }
 
