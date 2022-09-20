@@ -387,15 +387,18 @@ header {
   padding-top: 25px;
 }
 
-.customers .company .center.box .line {
-  width: 105px;
-  border-bottom: 1px solid #b4b4b4;
-  display: block;
-  padding-top: 40px;
+blockquote {
+  padding-bottom: 50px;
+  margin-top: 40px;
 }
 
-blockquote {
-  padding: 40px 0 50px;
+blockquote::before {
+  content: '';
+  width: 105px;
+  height: 1px;
+  background-color:  #b4b4b4;
+  display: block;
+  margin-bottom: 40px;
 }
 
 .customers .company .square {
@@ -408,10 +411,10 @@ blockquote {
 
 .customers .company .square img {
   width: 50%;
-  filter: invert();
+  filter: invert(1);
 }
 
-.active {
+.square:active {
   box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
